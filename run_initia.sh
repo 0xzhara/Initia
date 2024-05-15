@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# Show Airdrop Nobi logo
-echo "Showing Airdrop Nobi logo..."
 curl -s https://raw.githubusercontent.com/zrhraJETTOKOSUTA/bash-nobi.sh/main/bash%20logo.sh | bash
 echo "Join the Airdrop Nobi Telegram channel: https://t.me/airdropnobi"
 sleep 5
 
-# Updating and installing required packages
+# Updating
 echo "Updating and installing required packages..."
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y clang pkg-config libssl-dev curl git wget htop tmux build-essential jq make lz4 gcc unzip
 
-# Check and install Go if needed
+# install Go if needed
 if ! command -v go &> /dev/null || [[ $(go version | awk '{print $3}' | cut -d. -f2) -lt 19 ]]; then
     echo "Go version 1.19 or above is required. Installing the latest version..."
     cd $HOME
