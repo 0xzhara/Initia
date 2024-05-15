@@ -57,7 +57,7 @@ git checkout v0.2.12
 make install
 initiad version --long
 
-read -p "Enter moniker for your node: " moniker
+read -p "Enter your name: " moniker
 initiad init "$moniker" --chain-id initiation-1
 
 wget https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json
