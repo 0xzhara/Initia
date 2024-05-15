@@ -91,8 +91,3 @@ sudo systemctl enable initiad
 sudo systemctl daemon-reload
 sudo systemctl restart initiad
 
-echo "Creating Screen"
-sleep 3
-
-screen -S initia
-sudo journalctl -fu initiad -o cat
