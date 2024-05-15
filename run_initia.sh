@@ -4,8 +4,6 @@ curl -s https://raw.githubusercontent.com/zrhraJETTOKOSUTA/bash-nobi.sh/main/bas
 echo "Join the Airdrop Nobi Telegram channel: https://t.me/airdropnobi"
 sleep 5
 
-# Updating
-echo "Updating and installing required packages..."
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y clang pkg-config libssl-dev curl git wget htop tmux build-essential jq make lz4 gcc unzip
 
